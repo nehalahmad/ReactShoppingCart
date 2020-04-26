@@ -6,21 +6,17 @@ class ProductListing extends Component {
     //console.log(this.props.productListing);
     return (
       <div id="grid-container">
-        {" "}
         {this.props.productListing.map(item => (
           <div className="grid-item" key={item.id}>
-            <img alt={item.title} width="150px" src={item.image} />{" "}
-            <p className="title"> {item.title} </p>{" "}
-            <p className="size"> Size: {item.size} </p>{" "}
-            <p className="price"> Price: {util.formatCurrency(item.price)} </p>{" "}
+            <img alt={item.title} width="150px" src={item.image} />
+            <p className="title"> {item.title} </p>
+            <p className="size"> Size: {item.size} </p>
+            <p className="price"> Price: {util.formatCurrency(item.price)} </p>
             <button
               className="button"
-              onClick={e => this.props.handleAddToCart(e, item)}
-            >
-              Add to Cart{" "}
-            </button>{" "}
+              onClick={e => this.props.handleAddToCart(e, item)}> Add to Cart </button>
           </div>
-        ))}{" "}
+        ))}
       </div>
     );
   }
