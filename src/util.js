@@ -1,5 +1,5 @@
 export default {
-    formatCurrency: function (num) {
-        return '$ ' + parseInt(num);
-    }
-}
+  formatCurrency: function(num) {
+    return "$ " + parseInt(num);
+  }
+};

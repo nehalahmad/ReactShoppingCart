@@ -6,7 +6,6 @@ form{
     margin: auto;
 }
 
-
 #grid-container {
     display: flex;
     flex-direction: row;
@@ -131,7 +130,6 @@ cursor: pointer;
     width: 10%;
 }
 
-/* .squaredTwo */
 input[type='checkbox'] {
     width: 28px;
     height: 28px;
@@ -152,6 +150,10 @@ select {
 }  
 
 @media only screen and (max-width: 768px){
+    .sorting {
+        width: 50%;
+        margin: auto auto 30px;
+    }
     body{font-size: 100%;}
     form{
         width:100%;
